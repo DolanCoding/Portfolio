@@ -96,5 +96,5 @@ async function startServer() {
     console.log("----------------------------------------------");
   });
 }
-
+startServer();
 // Call the async function to start the server
