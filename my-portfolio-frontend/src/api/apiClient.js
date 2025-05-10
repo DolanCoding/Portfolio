@@ -1,0 +1,24 @@
+import axios from "axios";
+
+const apiClient = axios.create({
+  baseURL: "https://localhost:3001",
+  timeout: 10000,
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
+const fetchSomething = async (method, url, setLoading, setError) => {
+  try {
+    const response = await apiClient[method](url); // Use the Axios instance
+    // Axios automatically parses JSON
+    return response;
+  } catch (error) {
+    console.error("Fetching projects failed:", error);
+    setError(error);
+  } finally {
+    setLoading(false);
+  }
+};
+
+export { fetchSomething, apiClient };
