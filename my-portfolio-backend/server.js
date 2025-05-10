@@ -9,12 +9,9 @@ const sqlite = require("sqlite"); // Import sqlite
 const sqlite3 = require("sqlite3"); // Import sqlite3 driver
 const path = require("path"); // Import path module to handle file paths
 const { initializeDatabase } = require("./db/init_db"); // Import the database initialization script
-const https = require("https");
-const fs = require("fs");
 
 const app = express();
-const port = 3001; // Backend will run on port 3001 (or another port)
-
+const port = process.env.PORT || 3001;
 // Define the path to the database file
 
 let db; // Variable to hold the database connection instance
@@ -88,20 +85,16 @@ app.post("/api/admin_login", async (req, res) => {
   }
 });
 
-// --- Start the server AFTER the database connection is established ---
-const sslOptions = {
-  key: fs.readFileSync("key.pem"), // Path to your key.pem file
-  cert: fs.readFileSync("cert.pem"), // Path to your cert.pem file
-};
-
 // Create HTTPS server
-const server = https.createServer(sslOptions, app);
 
-server.listen(port, async () => {
-  await openDatabase();
-  console.log(`Server is running on https://localhost:${port}`);
-  console.log("----------------------------------------------");
-  console.log("----------------------------------------------");
-});
+async function startServer() {
+  await openDatabase(); // Öffne die Datenbank
+  app.listen(port, () => {
+    // Starte den HTTP-Server
+    console.log(`Server listening on port ${port}`);
+    console.log("----------------------------------------------");
+    console.log("----------------------------------------------");
+  });
+}
 
 // Call the async function to start the server

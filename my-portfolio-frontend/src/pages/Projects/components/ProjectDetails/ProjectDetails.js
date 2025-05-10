@@ -4,7 +4,7 @@ import "./ProjectDetails.css";
 
 function ProjectDetails(props) {
   const [page, setPage] = useState(0);
-  const totalPages = 3;
+  const totalPages = 4;
   const handlePageChange = (newPage) => {
     setPage(newPage);
   };
@@ -83,7 +83,7 @@ function ProjectDetails(props) {
               ))}
             </ul>
           </div>
-        ) : (
+        ) : page === 2 ? (
           <div className="details-container">
             <h5>Key-features</h5>
             <ul className="list-content">
@@ -91,6 +91,18 @@ function ProjectDetails(props) {
                 <li key={index}>
                   <strong>{Object.keys(feature)[0]}:</strong>
                   <span>{feature[Object.keys(feature)[0]]}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <div className="details-container">
+            <h5>Notes</h5>
+            <ul className="list-content">
+              {notes.map((note, index) => (
+                <li key={index}>
+                  <strong>{Object.keys(note)[0]}:</strong>
+                  <span>{feature[Object.keys(note)[0]]}</span>
                 </li>
               ))}
             </ul>
