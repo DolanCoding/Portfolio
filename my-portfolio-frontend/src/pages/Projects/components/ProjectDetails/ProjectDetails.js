@@ -18,6 +18,7 @@ function ProjectDetails(props) {
     image3,
     image,
     title,
+    notes,
   } = props;
   let { reason, learned_things, key_features } = props;
   learned_things = JSON.parse(learned_things);
@@ -102,7 +103,7 @@ function ProjectDetails(props) {
               {notes.map((note, index) => (
                 <li key={index}>
                   <strong>{Object.keys(note)[0]}:</strong>
-                  <span>{feature[Object.keys(note)[0]]}</span>
+                  <span>{note[Object.keys(note)[0]]}</span>
                 </li>
               ))}
             </ul>
