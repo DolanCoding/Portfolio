@@ -1,0 +1,73 @@
+/* src/styles/color-variables.css */
+
+:root {
+  /* --- Primäre Farben --- */
+  --color-primary-dark: #001122; /* Sehr dunkles Blau (Hintergrund) */
+  --color-primary-medium-dark: #002244; /* Etwas dunkleres Blau (Header, Footer, Abschnitte) */
+  --color-primary-medium: #003366; /* Mittleres Blau (z.B. Rahmen, Karten-Hintergrund) */
+  --color-primary-light: #004085; /* Etwas helleres Blau (z.B. Scrollbar Hover) */
+  --color-primary-accent: #0558b0; /* Akzent-Blau (z.B. Buttons) */
+  --color-primary-scrollbar-thumb: #0c5aa8; /* Blau für Scrollbar-Daumen */
+  --color-primary-scrollbar-track: #000c18; /* Sehr dunkles Blau für Scrollbar-Track */
+
+  /* --- Sekundäre Farben (für Akzente, Überschriften etc.) --- */
+  --color-secondary-light-blue: #98c1d9; /* Helles, kühles Blau (z.B. Überschriften, Header/Footer Links) */
+  --color-secondary-lighter-blue: #96b6cd; /* Noch helleres Blau (z.B. Karten-Überschriften) */
+  --color-secondary-link: #5e89d8bd; /* Cornflower Blue (z.B. Links in Karten) */
+
+  /* --- Textfarben --- */
+  --color-text-light: #71b8ff; /* Sehr helles Grau (Allgemeiner Text) - Behält einen sehr hellen Grauton für guten Kontrast auf dunklen Blautönen bei. */
+  --color-text-medium: #98c1d9; /* Helles Grau mit leichtem Blaustich (Ersetzt das mittlere Grau durch einen Ton, der sich mehr an den Sekundärfarben orientiert, gut für weniger wichtigen Text oder feine Hervorhebungen auf dunklen Hintergründen). */
+  --color-text-dark: #3679b8; /* Sehr dunkles Blau (Ersetzt das dunkle Grau durch ein sehr dunkles Blau aus der Primärpalette. Besser für Text auf helleren Hintergründen oder dort, wo starker Kontrast zu hellen Textfarben benötigt wird). */
+  --color-text-white: white; /* Weiß - Bleibt unverändert, da es hervorragenden Kontrast auf dunklen Blautönen bietet. */
+
+  /* --- Weitere Farben --- */
+  --color-switch-active: #5988b594;
+  --color-switch-active-hover: #3a6a9c; /* Dunklere Variante für Hover */
+}
+ul,
+ol {
+  list-style-position: inside;
+}
+/* src/index.css */
+html {
+  font-size: clamp(1.2vmin, 20px, 1.85vmin);
+  font-family: "Source Code Pro" !important;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: Source Code Pro, sans-serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: var(--color-text-light);
+}
+
+*::-webkit-scrollbar {
+  width: clamp(0.5vw, 0.5vw, 0.5vw);
+
+  border-radius: 1vmin;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-primary-scrollbar-track);
+  border: 0.1vmin solid #3b79f473;
+  border-radius: 1vmin;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary-scrollbar-thumb);
+  border-radius: 1vmin;
+  border: 0.1vmin solid var(--color-primary-dark);
+  width: 100%;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary-light);
+}

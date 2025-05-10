@@ -1,0 +1,41 @@
+/* src/components/Header/Header.css */
+header {
+  background-color: var(--color-primary-medium-dark);
+  color: var(--color-text-white);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0.2vmin 0.4vmin rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  min-height: 3vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.3vmin solid #27305073;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1vw;
+}
+
+nav ul li {
+}
+
+nav a {
+  color: var(--color-text-white);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-secondary-light-blue);
+}

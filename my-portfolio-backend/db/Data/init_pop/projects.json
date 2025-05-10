@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Personal Portfolio Website",
+    "description": "A responsive portfolio showcasing my projects and skills using React, Express, and CSS.",
+    "image": "/images/portfolio_webapp.png",
+    "github_link": "https://github.com/yourusername/portfolio-website",
+    "live_link": "https://your-portfolio-website.com",
+    "tags": "React, Express, HTML, CSS, JavaScript",
+    "starting_date": "2023-01-15",
+    "finished_date": "2023-03-10",
+    "timespan": 55,
+    "hours_per_day": 3,
+    "learned_things": [
+      {
+        "CSS": "Beherrschung von Responsive Design mit CSS Grid und Flexbox: Ermöglicht die Entwicklung von Benutzeroberflächen, die auf allen Geräten optimal funktionieren und eine breite Nutzerbasis effektiv anspreche ."
+      },
+      {
+        "React": "Sicherer Einsatz von React Hooks (useState, useEffect, useMemo, useRef): Führt zu effizienterem, wartbarerem und performanterem Cod , was die Entwicklung beschleunigt und die langfristigen Kosten senkt."
+      },
+      {
+        "Js": "Koordination von Animationen mit JS: Zeigt Liebe zum Detail und die Fähigkeit, polierte Benutzererfahrungen zu schaffe , die Professionalität vermitteln."
+      },
+      {
+        "Node.js": "Backend-Integration mit Express: Belegt die Fähigkeit, Frontend mit Datenquellen zu verbinde  und serverseitige Logik zu verstehen – essenziell für komplexe Anwendungen."
+      }
+    ],
+    "reason": [
+      {
+        "Direkter Beweis der Fähigkeiten": "Statt nur aufzulisten, liefert das Portfolio direkten, greifbaren Bewei  meiner praktischen Skills. Sie sehen, dass ich Technologien wie React und Express beherrsche und in funktionierende, ansprechende Produkt  umsetze – das reduziert Ihr Einstellungsrisik  und schafft Vertrauen."
+      },
+      {
+        "Demonstration umfassender Arbeitsweise": "Zeigt meine Fähigkeit zur umfassenden (End-to-End) Projektumsetzun  von der Konzeption bis zum Deployment. Belegt meinen Anspruch an Code-Qualität und Robusthei  für verlässliche Anwendungen und zeigt meine Problemlösungsfähigkeite ."
+      },
+      {
+        "Klares Zeichen für Motivation & Leidenschaft": "Dieses selbst initiierte Projekt ist ein klares Indiz für meine starke Eigeninitiative, hohe Motivation und Leidenschaf  für die Webentwicklung. Sie gewinnen einen Mitarbeiter, der bereit ist, sich engagiert einzubringe  und über das Standardmaß hinausgeht."
+      },
+      {
+        "Beleg für Lernbereitschaft & Anpassungsfähigkeit": "Die dokumentierten Lernerfolge belegen meine schnelle Lernbereitschaft und Anpassungsfähigkei . Essentiell in der Tech-Branche für einen Mitarbeiter, der sich schnell einarbeite  und stets auf dem neuesten Stand ist – ein wichtiger Faktor für Projekterfol ."
+      }
+    ],
+    "key_features": [
+      {
+        "Dynamisches auf tags basierendes filtern": "Dynamisches, Tag-basiertes Filtern: Ermöglicht Ihnen als Arbeitgeber, meine relevanten Fähigkeiten schnell zu identifiziere  und Projekte basierend auf spezifischen Technologien zu finden – spart wertvolle Zei  bei der Kandidatenbewertung."
+      },
+      {
+        "Animierte Übergänge": "Animierte Übergänge: Demonstriert die Fähigkeit, hochwertige und professionell wirkende Benutzeroberfläche  zu gestalten, die die Benutzererfahrung verbessern und Liebe zum Detail zeigen."
+      },
+      {
+        "Backend mit express.js sowie SQLite": "Implementierung eines Backends mit Express.js und SQLite: Zeigt praktische Erfahrung mit datenbankgesteuerten Anwendunge  und die Fähigkeit, vollständige (Full-Stack) Lösunge  zu entwickeln."
+      },
+      {
+        "Admin Panel": "Admin Panel zur Projektverwaltung: Belegt die Fähigkeit, praktische interne Tool  zu entwickeln und an die Skalierbarkeit und Wartbarkeit der Anwendun  zu denken."
+      }
+    ]
+  }
+]

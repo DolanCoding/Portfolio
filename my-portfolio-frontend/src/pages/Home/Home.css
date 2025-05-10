@@ -1,0 +1,86 @@
+.home-section {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically if section has a defined height */
+  padding: 8vmin 2vmin; /* Add padding top/bottom and sides */
+  min-height: 100%; /* Ensure section takes at least full viewport height */
+  /* Replaced light background with the dark primary background variable */
+  background-color: #002244;
+  /* Replaced standard text color with the light text color variable for contrast */
+  color: var(--color-text-light);
+  font-family: "Arial", sans-serif; /* Choose a clean, readable font */
+  line-height: 1.6; /* Improve readability */
+  text-align: center; /* Center text elements */
+  box-shadow: 0 0.4vmin 1vmin rgba(var(--color-black-rgb), 0.3);
+}
+
+.intro-container {
+  width: 100%;
+  /* Slightly stronger shadow for dark theme */
+  padding: 0vh 2vw;
+  /* Replaced white background with a medium primary blue background variable */
+  border-radius: 0.8vmin; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.profile-photo {
+  width: 150px; /* Size of the profile photo */
+  height: 150px;
+  border-radius: 50%; /* Make it round */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  margin-bottom: 3vmin; /* Space below the photo */
+  /* Replaced primary color border with the primary accent color variable */
+  border: 0.2vmin solid var(--color-primary-accent);
+}
+
+.intro-headline {
+  font-size: 2.5rem; /* Larger size for the main headline */
+  margin-bottom: 2vmin; /* Space below the headline */
+  /* Replaced darker blue headline color with secondary light blue for contrast on dark background */
+  color: var(--color-secondary-light-blue);
+  line-height: 1.3;
+}
+
+.intro-paragraph {
+  font-size: 1.2rem; /* Slightly larger font for paragraphs */
+  margin-bottom: 2vmin; /* Space between paragraphs */
+  text-align: justify; /* Justify text for a cleaner block */
+  hyphens: auto; /* Allow hyphens if needed for justification */
+  /* Paragraph text already uses --color-text-light inherited from .home-section */
+}
+
+/* Adjust text alignment for smaller screens where justification might look awkward */
+@media (max-width: 600px) {
+  .intro-paragraph {
+    text-align: left;
+  }
+}
+
+.cta-button.primary-cta {
+  display: inline-block; /* Allow padding and margin */
+  /* Replaced primary color button background with the primary accent color variable */
+  background-color: var(--color-primary-accent);
+  /* Replaced white text color with the white text color variable */
+  color: var(--color-text-medium);
+  padding: 1.2vmin 2.5vmin;
+  border-radius: 0.5vmin; /* Rounded corners for the button */
+  text-decoration: none; /* Remove underline from link */
+  font-size: 1.2rem; /* Make button text slightly larger */
+  margin-top: 3vh; /* Space above the button */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transition for hover effects */
+  /* Replaced button shadow with shadow using primary accent RGB variable */
+  box-shadow: 0 0.3vmin 0.5vmin #002244; /* Slightly stronger shadow for dark theme */
+}
+
+.cta-button.primary-cta:hover {
+  /* Replaced darker shade on hover with a primary light color variable */
+  background-color: var(
+    --color-primary-light
+  ); /* Using a shade from the primary palette for hover */
+  transform: translateY(-0.2vmin); /* Slight lift effect on hover */
+}
+
+.cta-button.primary-cta:active {
+  transform: translateY(0); /* Press down effect */
+  box-shadow: none;
+}

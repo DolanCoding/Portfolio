@@ -1,0 +1,146 @@
+/* src/pages/About/About.css */
+
+.about-page-container {
+  /* max-width and margin handled by .main-content-wrapper */
+  color: #5f94bf;
+  background-color: #002244;
+  border-radius: 0.5vmin;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: start;
+  padding: 2%;
+  height: 100%;
+  /* Add properties for internal scrolling */
+  /* <-- Calculate max height (example) */
+  overflow-y: auto; /* <-- Enable vertical scrolling if content overflows */
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page-container h2 {
+  color: #98c1d9; /* Color for the main page heading */
+  text-align: center; /* Center the main heading */
+  margin: 2vh 0vw;
+}
+
+.about-section {
+  margin-bottom: 3vh; /* Space between sections */
+  padding-bottom: 2vh;
+
+  border-bottom: 0.2vmin solid #003366; /* Add a subtle separator line between sections */
+}
+
+.about-section:last-child {
+  border-bottom: none; /* Remove border from the last section */
+  margin-bottom: 0; /* Remove bottom margin from the last section */
+  padding-bottom: 0;
+}
+
+.about-section h3 {
+  color: #b3cde0; /* Lighter blue for section headings */
+  margin-bottom: 1.5vh; /* Space below section headings */
+  justify-self: center;
+}
+
+.about-section p {
+  color: #5f94bf; /* Light gray for paragraphs */
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.skills-section ul {
+  list-style: none; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+  margin-left: 0; /* Remove default margin */
+  display: flex; /* Use flexbox to arrange items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 10px; /* Add space between flex items (skills) */
+  justify-content: start; /* Center the skill tags if there's extra space */
+}
+
+.skills-section ul li {
+  /* Remove the default bottom margin from previous step if it's still there */
+  margin-bottom: 0; /* Ensure no extra space below list items */
+
+  background-color: #004085; /* Darker blue background for each tag */
+  color: var(--color-text-light); /* Light text color for the tag */
+  padding: 0.6vh 0.6vw; /* Padding inside the tag */
+  border-radius: 1vmin; /* More rounded corners for a pill/tag shape */ /* Slightly smaller font size */
+  font-weight: bold; /* Make the text bold */
+  /* You can add a border if you like: border: 1px solid #6495ed; */
+}
+
+.skills-section ul li::marker {
+  color: #6495ed; /* Match the h3 left border color */
+}
+
+/* Styles for individual Project and Learning entries */
+.summary-section p, /* <-- Add this */
+.project-entry,
+.learning-entry {
+  background-color: #003366; /* Slightly darker background for each entry */
+  padding: 15px; /* Padding inside each entry */
+  margin-bottom: 20px; /* Space between entries */
+  border-radius: 5px; /* Slightly rounded corners */
+  border-left: 5px solid #6495ed; /* Add a left border for emphasis */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Remove bottom margin from the last entry in each section */
+.about-section .project-entry:last-child,
+.about-section .learning-entry:last-child {
+  margin-bottom: 0;
+}
+
+.project-entry h4,
+.learning-entry h4 {
+  color: #b3cde0; /* Lighter blue for the entry title */
+  margin-top: 0; /* Remove default top margin */
+  margin-bottom: 5px; /* Space below the title */
+}
+
+.project-entry .project-date,
+.learning-entry .learning-institution,
+.learning-entry .learning-date {
+  color: #98c1d9; /* Medium blue for dates/institution */
+  font-size: 0.9em; /* Smaller font size */
+  margin-bottom: 10px; /* Space below */
+  font-style: italic; /* Italicize dates/institution */
+}
+
+.project-entry p,
+.learning-entry p {
+  color: #ccc; /* Light gray for descriptions */
+  line-height: 1.6;
+  margin-bottom: 10px; /* Space below description */
+}
+
+/* Style for potential links within entries */
+.project-entry a {
+  color: #6495ed; /* Link color matching bullet/h3 border */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-entry a:hover {
+  text-decoration: underline;
+}
+
+.centered-p {
+  text-align: center;
+}
+
+/* Specific style for the Skills list if you want it without bullets later */
+/* .skills-section ul { */
+/* list-style: none; */
+/* margin-left: 0; */
+/* display: flex; // Example: display skills in a row */
+/* flex-wrap: wrap; // Allow wrapping */
+/* justify-content: center; // Center skills if flexbox is used */
+/* } */
+
+/* .skills-section ul li { */
+/* background-color: #003366; // Example: Add a background to skills */
+/* padding: 5px 10px; */
+/* margin: 5px; */
+/* border-radius: 3px; */
+/* } */
