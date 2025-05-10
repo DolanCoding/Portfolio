@@ -19,11 +19,6 @@ Thumbs.db
 .env.production
 .env.staging
 
-# Build outputs
-/build
-/dist
-/public
-
 # IDEs
 .idea/
 *.iml
