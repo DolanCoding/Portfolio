@@ -12,16 +12,6 @@ function Footer(props) {
           &copy; {new Date().getFullYear()} Sascha Fischer. All rights reserved.
         </p>
         {/* This is where we'll add the admin link */}
-        <div className="admin-link-container">
-          {/* For now, the link text is simple. We can style this later */}
-          <Link
-            to="/login"
-            className="admin-link"
-            onClick={(e) => props.changePageName("admin")}
-          >
-            Admin Login
-          </Link>
-        </div>
       </div>
     </footer>
   );

@@ -16,16 +16,13 @@ function ProjectDetails(props) {
     hours_per_day,
     image2,
     image3,
-    image,
     title,
-    notes,
   } = props;
-  let { reason, learned_things, key_features } = props;
+  let { reason, learned_things, key_features, notes } = props;
   learned_things = JSON.parse(learned_things);
   key_features = JSON.parse(key_features);
   reason = JSON.parse(reason);
-  console.log("learned_things", learned_things);
-  console.log("key_features", key_features);
+  notes = JSON.parse(notes);
   return (
     <div id={`${id}`} className="project-details-wrapper">
       <div className="project-details-container">
@@ -54,8 +51,8 @@ function ProjectDetails(props) {
                 <span>{hours_per_day * timespan}</span>
               </p>
             </div>
-            <img src={image} alt={title}></img>
-            <img src={image} alt={title}></img>
+            <img src={image2} alt={title}></img>
+            <img src={image3} alt={title}></img>
           </div>
         </div>
         {page === 0 ? (

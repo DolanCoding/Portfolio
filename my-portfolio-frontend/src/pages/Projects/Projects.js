@@ -3,7 +3,6 @@ import "./Projects.css";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
 import { fetchSomething } from "../../api/apiClient";
 
-
 function Projects({ selectedTags, relevance, precision }) {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -201,11 +200,6 @@ function Projects({ selectedTags, relevance, precision }) {
           })}
         </div>
       )}
-      <div className="project-details-anchor">
-        {projects.map((project) => {
-          return;
-        })}
-      </div>
     </div>
   );
 }

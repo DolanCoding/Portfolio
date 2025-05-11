@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProjectsViewerPanel.css"; // Import the CSS file for styling
-import { useState } from "react"; // Import useState from React
 const Icons = {
   JavaScript: "https://img.icons8.com/color/48/javascript--v1.png",
   React: "https://img.icons8.com/color/48/react-native.png",
@@ -21,8 +20,8 @@ function ProjectsViewerPanel({
   handleTagRelevance,
   handleTagPrecision,
   selectedTags,
+  relevance,
 }) {
-  const [relevance, setRelevance] = useState(false);
   const handleDrawer = (e) => {
     const child = e.target;
     const drawer = child.parentElement.parentElement;
@@ -128,11 +127,6 @@ function ProjectsViewerPanel({
               ))}
             </div>
           </div>
-          <input
-            className="search-input"
-            type="text"
-            placeholder="enter a text query"
-          />
         </div>
       </div>
     </>

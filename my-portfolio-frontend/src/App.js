@@ -12,7 +12,6 @@ import Projects from "./pages/Projects/Projects";
 import ProjectsViewerPanel from "./pages/Projects/components/ProjectsViewerPanel/ProjectsViewerPanel"; // Import the ProjectsViewerPanel component
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
-import Login from "./pages/Login/Login"; // Import the Login component
 
 // Import Routes and Route from react-router-dom
 import { Routes, Route } from "react-router-dom";
@@ -20,19 +19,12 @@ import { useState } from "react";
 
 function App() {
   const [pageName, setPageName] = useState("home"); // Default page name
-  const [isAdmin, setIsAdmin] = useState(false); // State to track if the user is an admin
   const [selectedTags, setSelectedTags] = useState([]); // State to track selected tags
   const [relevance, setRelevance] = useState(false); // State to track relevance
   const [precision, setPrecision] = useState(false); // State to track precision
 
   const changePageName = (newPageName) => {
     setPageName(newPageName);
-  };
-
-  const handleAdminLogin = () => {
-    // Handle admin login logic here
-
-    setIsAdmin(true); // Set admin state to true
   };
 
   const handleSearch = (searchTerm) => {
@@ -57,14 +49,9 @@ function App() {
 
       const numberOfElementsToAnimate = visibleProjectCards.length;
 
-      let longestDelay = 0;
-
       for (let i = 0; i < numberOfElementsToAnimate; i++) {
         const card = visibleProjectCards[i];
         const delay = i * staggerDelayMs;
-
-        longestDelay = delay;
-
         setTimeout(() => {
           card.classList.add("transition-fade-out");
         }, delay);
@@ -107,10 +94,6 @@ function App() {
             }
           />
           <Route path="/contact" element={<Contact />} />
-          <Route
-            path="/login"
-            element={<Login handleAdminLogin={handleAdminLogin} />}
-          />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>{" "}

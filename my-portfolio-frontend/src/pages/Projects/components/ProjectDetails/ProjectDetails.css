@@ -127,12 +127,21 @@
   padding: 1vh 1vw;
   border: 0.1vmin solid var(--color-text-light);
   border-radius: 0.5vmin;
+  overflow-y: scroll;
+}
+
+.list-content::-webkit-scrollbar-thumb {
+  background-color: #5f94bf;
+}
+.list-content::-webkit-scrollbar-track {
+  background-color: var(--color-primary-medium-dark);
 }
 .list-content > ul {
   height: 100%;
 }
 .project-details-container li {
   align-items: start;
+  margin-bottom: 1vh;
 }
 
 .project-details-container li::marker {

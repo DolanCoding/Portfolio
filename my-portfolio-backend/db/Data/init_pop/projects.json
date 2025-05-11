@@ -31,7 +31,7 @@
         "Direkter Beweis der Fähigkeiten": "Statt nur aufzulisten, liefert das Portfolio direkten, greifbaren Bewei  meiner praktischen Skills. Sie sehen, dass ich Technologien wie React und Express beherrsche und in funktionierende, ansprechende Produkt  umsetze – das reduziert Ihr Einstellungsrisik  und schafft Vertrauen."
       },
       {
-        "Demonstration umfassender Arbeitsweise": "Zeigt meine Fähigkeit zur umfassenden (End-to-End) Projektumsetzun  von der Konzeption bis zum Deployment. Belegt meinen Anspruch an Code-Qualität und Robusthei  für verlässliche Anwendungen und zeigt meine Problemlösungsfähigkeite ."
+        "Demonstration umfassender Arbeitsweise": "Zeigt meine Fähigkeit zur umfassenden (End-to-End) Projektumsetzung  von der Konzeption bis zum Deployment. Belegt meinen Anspruch an Code-Qualität und Robusthei  für verlässliche Anwendungen und zeigt meine Problemlösungsfähigkeite ."
       },
       {
         "Klares Zeichen für Motivation & Leidenschaft": "Dieses selbst initiierte Projekt ist ein klares Indiz für meine starke Eigeninitiative, hohe Motivation und Leidenschaf  für die Webentwicklung. Sie gewinnen einen Mitarbeiter, der bereit ist, sich engagiert einzubringe  und über das Standardmaß hinausgeht."
@@ -51,8 +51,29 @@
         "Backend mit express.js sowie SQLite": "Implementierung eines Backends mit Express.js und SQLite: Zeigt praktische Erfahrung mit datenbankgesteuerten Anwendunge  und die Fähigkeit, vollständige (Full-Stack) Lösunge  zu entwickeln."
       },
       {
-        "Admin Panel": "Admin Panel zur Projektverwaltung: Belegt die Fähigkeit, praktische interne Tool  zu entwickeln und an die Skalierbarkeit und Wartbarkeit der Anwendun  zu denken."
+        "Hosting über Git-Pages": "Hosting über Git-Pages: Zeigt die Fähigkeit, statische Inhalte effizient und kostengünstig bereitzustellen und Plattform-Features für die Präsentation von Projekten zu nutzen – ideal für Landing Pages oder Dokumentationen."
+      },
+      {
+        "Implementierung auf Render.com": "Implementierung auf Render.com: Demonstriert Erfahrung in der Bereitstellung und Verwaltung von Full-Stack-Anwendungen auf modernen Cloud-Plattformen. Dies beweist die Fähigkeit, komplexe Anwendungen von der Entwicklung bis zum produktiven Einsatz zu bringen und DevOps-Praktiken anzuwenden."
       }
+    ],
+    "notes": [
+      {
+        "Note 1": "I had an idea of implementing an admin panel but since the database has to be prepopulated with data as the free tier of render.com does not allow the usage of a persistent database, I decided to skip it for now.",
+        "Note 2": "test223"
+      }
+    ],
+    "search_terms": [
+      "project showcase",
+      "animated transitions",
+      "dynamic filtering",
+      "responsive design",
+      "interactive elements",
+      "website layout",
+      "user interface",
+      "content management",
+      "project organization",
+      "professional presentation"
     ]
   }
 ]

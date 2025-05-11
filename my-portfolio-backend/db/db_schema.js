@@ -17,6 +17,7 @@ schema = {
         { name: "reason", type: "TEXT" },
         { name: "learned_things", type: "TEXT" },
         { name: "key_features", type: "TEXT" },
+        { name: "notes", type: "TEXT" },
       ],
     },
     {

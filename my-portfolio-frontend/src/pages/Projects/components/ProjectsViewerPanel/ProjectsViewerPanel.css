@@ -5,7 +5,7 @@
   grid-column: 1;
   background-color: var(--color-primary-medium-dark);
   justify-self: end;
-  transform: translateX(12.9vw);
+  transform: translateX(12.5vw);
   transition: transform 1s linear;
   z-index: 1;
   position: relative;
@@ -113,14 +113,14 @@
   grid-column: 2;
   background-color: var(--color-primary-medium-dark);
   border-radius: 1vmin;
-  width: 80%;
+  width: 90%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 95% 5%;
+  grid-template-rows: 100%;
   justify-items: center;
 }
 
-.search-input {
+/*.search-input {
   background-color: #5988b594;
   border: #59a6ff 0.1vmin solid;
   padding: 0.5vmin;
@@ -132,19 +132,17 @@
   grid-row: 2;
   grid-column: 1;
   border-radius: 0 0 0.5vmin 0.5vmin;
-}
+}*/
 .projects-viewer-panel-tags {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 19% 80%;
+  grid-template-rows: 20% 79%;
   align-self: start;
   grid-row: 1;
   grid-column: 1;
   height: 100%;
   width: 100%;
-  border: var(--color-secondary-link) 0.2vmin solid;
 
-  border-radius: 0.5vmin 0.5vmin 0 0;
   row-gap: 1%;
 }
 
@@ -160,9 +158,10 @@
 }
 .projects-viewer-panel-tags-headline > h4 {
   color: var(--color-secondary-light-blue);
-  font-size: 1rem;
   margin: 0;
   text-align: center;
+  white-space: nowrap;
+  font-size: 0.9rem;
 }
 
 .projects-viewer-panel-tags-taglist {
@@ -176,6 +175,7 @@
   padding-right: 2%;
   border: 0.1vmin solid var(--color-secondary-light-blue);
   overflow-x: hidden;
+  border-radius: 0.5vmin;
 }
 /*Hier*/
 
@@ -244,7 +244,7 @@
 }
 
 .search-settings-toggle-filter-status {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: center;
   color: #67a9eaaf;
   transition: color 0.2s, font-weight 0.2s;
@@ -252,7 +252,7 @@
   background-color: var(--color-switch-active);
   padding: 0 0.2vw;
   border-radius: 0.5vmin;
-  min-width: 2.5vw;
+  width: 100%;
   border: 0.1vmin solid var(--color-secondary-light-blue);
   pointer-events: all;
   cursor: pointer;
@@ -260,9 +260,8 @@
 .search-settings-toggle-filter-status.status2 {
   grid-column: 2 / 4;
   position: relative;
-  justify-self: start;
-  left: 0.5vw;
-  min-width: 5.5vw;
+  justify-self: center;
+  align-self: center;
 }
 
 /* Aktiv-Zustand */

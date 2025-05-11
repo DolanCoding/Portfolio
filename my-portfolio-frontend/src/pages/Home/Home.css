@@ -24,17 +24,16 @@
 }
 
 .profile-photo {
-  width: 150px; /* Size of the profile photo */
-  height: 150px;
+  width: 20vh;
+  height: 20vh;
   border-radius: 50%; /* Make it round */
-  object-fit: cover; /* Ensure the image covers the area without distortion */
-  margin-bottom: 3vmin; /* Space below the photo */
+  object-fit: fill; /* Ensure the image covers the area without distortion */
   /* Replaced primary color border with the primary accent color variable */
   border: 0.2vmin solid var(--color-primary-accent);
 }
 
 .intro-headline {
-  font-size: 2.5rem; /* Larger size for the main headline */
+  font-size: 1.8rem; /* Larger size for the main headline */
   margin-bottom: 2vmin; /* Space below the headline */
   /* Replaced darker blue headline color with secondary light blue for contrast on dark background */
   color: var(--color-secondary-light-blue);
@@ -42,7 +41,7 @@
 }
 
 .intro-paragraph {
-  font-size: 1.2rem; /* Slightly larger font for paragraphs */
+  font-size: 1rem; /* Slightly larger font for paragraphs */
   margin-bottom: 2vmin; /* Space between paragraphs */
   text-align: justify; /* Justify text for a cleaner block */
   hyphens: auto; /* Allow hyphens if needed for justification */

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css"; // Ensure this CSS file is styled to match the persona's requirements (clean, responsive)
 import { Link } from "react-router-dom";
+import profile from "../../images/profile.png";
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
       <div className="intro-container">
         {/* Use a high-quality, professional photo that conveys approachability and confidence */}
         <img
-          src=".jpg"
+          src={profile}
           alt="Sascha Fischer - Full-stack Developer"
           className="profile-photo"
         />
