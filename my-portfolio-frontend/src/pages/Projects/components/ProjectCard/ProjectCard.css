@@ -101,7 +101,6 @@
   align-self: end;
   justify-content: space-between;
   height: 100%;
-  gap: 1vw;
 }
 .project-tag {
   background-color: var(--color-primary-medium-dark);
@@ -150,7 +149,7 @@
   white-space: nowrap;
   overflow: hidden;
   align-content: center;
-  padding: 1%;
+  padding: 0.5vmin;
 }
 
 .project-links .project-button:hover {

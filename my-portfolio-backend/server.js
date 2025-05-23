@@ -11,8 +11,8 @@ const path = require("path"); // Import path module to handle file paths
 const { initializeDatabase } = require("./db/init_db"); // Import the database initialization script
 
 const app = express();
-const port = process.env.PORT || 3001;
-// Define the path to the database file
+const port = 3001;
+// Define the path to the database file process.env.PORT
 
 let db; // Variable to hold the database connection instance
 

@@ -2,78 +2,65 @@
   {
     "title": "Personal Portfolio Website",
     "description": "A responsive portfolio showcasing my projects and skills using React, Express, and CSS.",
-    "image": "https://portfolio-backend-qu09.onrender.com/images/Portfolio/portfolio_webapp.png",
-    "image2": "https://portfolio-backend-qu09.onrender.com/images/Portfolio/portfolio_webapp.png",
-    "image3": "https://portfolio-backend-qu09.onrender.com/images/Portfolio/portfolio_webapp.png",
+    "image": "https://portfolio-backend-qu09.onrender.com/images/Portfolio/portfolio_webapp1.png",
+    "image2": "https://portfolio-backend-qu09.onrender.com/images/Portfolio/portfolio_webapp3.png",
+    "image3": "https://portfolio-backend-qu09.onrender.com/images/Portfolio/portfolio_webapp2.png",
     "github_link": "https://github.com/DolanCoding/Portfolio",
     "live_link": "https://dolancoding.github.io/Portfolio/",
     "tags": "React, Express, HTML, CSS, JavaScript",
-    "starting_date": "2023-01-15",
-    "finished_date": "2023-03-10",
-    "timespan": 55,
-    "hours_per_day": 3,
+    "starting_date": "2023-04-28",
+    "finished_date": "2023-05-13",
+    "timespan": 75,
+    "hours_per_day": 5,
     "learned_things": [
       {
-        "CSS": "Beherrschung von Responsive Design mit CSS Grid und Flexbox: Ermöglicht die Entwicklung von Benutzeroberflächen, die auf allen Geräten optimal funktionieren und eine breite Nutzerbasis effektiv anspreche ."
+        "CSS": "Mastery of Responsive Design with CSS Grid and Flexbox: Enables the development of user interfaces that function optimally on all devices and effectively appeal to a broad user base."
       },
       {
-        "React": "Sicherer Einsatz von React Hooks (useState, useEffect, useMemo, useRef): Führt zu effizienterem, wartbarerem und performanterem Cod , was die Entwicklung beschleunigt und die langfristigen Kosten senkt."
+        "React": "Confident use of React Hooks (useState, useEffect, useMemo, useRef): Leads to more efficient, maintainable, and performant code, accelerating development and reducing long-term costs."
       },
       {
-        "Js": "Koordination von Animationen mit JS: Zeigt Liebe zum Detail und die Fähigkeit, polierte Benutzererfahrungen zu schaffe , die Professionalität vermitteln."
+        "Js": "Coordination of animations with JS: Demonstrates attention to detail and the ability to create polished user experiences that convey professionalism."
       },
       {
-        "Node.js": "Backend-Integration mit Express: Belegt die Fähigkeit, Frontend mit Datenquellen zu verbinde  und serverseitige Logik zu verstehen – essenziell für komplexe Anwendungen."
+        "Node.js": "Backend integration with Express: Proves the ability to connect frontends with data sources and understand server-side logic – essential for complex applications."
       }
     ],
     "reason": [
       {
-        "Direkter Beweis der Fähigkeiten": "Statt nur aufzulisten, liefert das Portfolio direkten, greifbaren Bewei  meiner praktischen Skills. Sie sehen, dass ich Technologien wie React und Express beherrsche und in funktionierende, ansprechende Produkt  umsetze – das reduziert Ihr Einstellungsrisik  und schafft Vertrauen."
+        "Direct Proof of Skills": "Instead of just listing them, the portfolio provides direct, tangible proof of my practical skills. You'll see that I master technologies like React and Express and implement them into functional, appealing products – this reduces your hiring risk and builds trust."
       },
       {
-        "Demonstration umfassender Arbeitsweise": "Zeigt meine Fähigkeit zur umfassenden (End-to-End) Projektumsetzung  von der Konzeption bis zum Deployment. Belegt meinen Anspruch an Code-Qualität und Robusthei  für verlässliche Anwendungen und zeigt meine Problemlösungsfähigkeite ."
+        "Demonstration of Comprehensive Work Approach": "Shows my ability for comprehensive (end-to-end) project implementation, from conception to deployment. Demonstrates my commitment to code quality and robustness for reliable applications, and highlights my problem-solving skills."
       },
       {
-        "Klares Zeichen für Motivation & Leidenschaft": "Dieses selbst initiierte Projekt ist ein klares Indiz für meine starke Eigeninitiative, hohe Motivation und Leidenschaf  für die Webentwicklung. Sie gewinnen einen Mitarbeiter, der bereit ist, sich engagiert einzubringe  und über das Standardmaß hinausgeht."
+        "Clear Sign of Motivation & Passion": "This self-initiated project is a clear indicator of my strong self-initiative, high motivation, and passion for web development. You'll gain an employee who is willing to engage enthusiastically and go beyond the standard."
       },
       {
-        "Beleg für Lernbereitschaft & Anpassungsfähigkeit": "Die dokumentierten Lernerfolge belegen meine schnelle Lernbereitschaft und Anpassungsfähigkei . Essentiell in der Tech-Branche für einen Mitarbeiter, der sich schnell einarbeite  und stets auf dem neuesten Stand ist – ein wichtiger Faktor für Projekterfol ."
+        "Proof of Willingness to Learn & Adaptability": "The documented learning successes prove my quick learning ability and adaptability. Essential in the tech industry for an employee who quickly gets up to speed and stays current – an important factor for project success."
       }
     ],
     "key_features": [
       {
-        "Dynamisches auf tags basierendes filtern": "Dynamisches, Tag-basiertes Filtern: Ermöglicht Ihnen als Arbeitgeber, meine relevanten Fähigkeiten schnell zu identifiziere  und Projekte basierend auf spezifischen Technologien zu finden – spart wertvolle Zei  bei der Kandidatenbewertung."
+        "Dynamic tag-based filtering": "Dynamic, tag-based filtering: Allows you as an employer to quickly identify my relevant skills and find projects based on specific technologies – saving valuable time in candidate evaluation."
       },
       {
-        "Animierte Übergänge": "Animierte Übergänge: Demonstriert die Fähigkeit, hochwertige und professionell wirkende Benutzeroberfläche  zu gestalten, die die Benutzererfahrung verbessern und Liebe zum Detail zeigen."
+        "Animated transitions": "Animated transitions: Demonstrates the ability to design high-quality and professional-looking user interfaces that enhance the user experience and show attention to detail."
       },
       {
-        "Backend mit express.js sowie SQLite": "Implementierung eines Backends mit Express.js und SQLite: Zeigt praktische Erfahrung mit datenbankgesteuerten Anwendunge  und die Fähigkeit, vollständige (Full-Stack) Lösunge  zu entwickeln."
+        "Backend with express.js and SQLite": "Implementation of a backend with Express.js and SQLite: Shows practical experience with database-driven applications and the ability to develop complete (full-stack) solutions."
       },
       {
-        "Hosting über Git-Pages": "Hosting über Git-Pages: Zeigt die Fähigkeit, statische Inhalte effizient und kostengünstig bereitzustellen und Plattform-Features für die Präsentation von Projekten zu nutzen – ideal für Landing Pages oder Dokumentationen."
+        "Hosting via Git-Pages": "Hosting via Git-Pages: Shows the ability to efficiently and cost-effectively deploy static content and leverage platform features for project presentation – ideal for landing pages or documentation."
       },
       {
-        "Implementierung auf Render.com": "Implementierung auf Render.com: Demonstriert Erfahrung in der Bereitstellung und Verwaltung von Full-Stack-Anwendungen auf modernen Cloud-Plattformen. Dies beweist die Fähigkeit, komplexe Anwendungen von der Entwicklung bis zum produktiven Einsatz zu bringen und DevOps-Praktiken anzuwenden."
+        "Deployment on Render.com": "Deployment on Render.com: Demonstrates experience in deploying and managing full-stack applications on modern cloud platforms. This proves the ability to bring complex applications from development to production and apply DevOps practices."
       }
     ],
     "notes": [
       {
-        "Note 1": "I had an idea of implementing an admin panel but since the database has to be prepopulated with data as the free tier of render.com does not allow the usage of a persistent database, I decided to skip it for now.",
-        "Note 2": "test223"
+        "Note 1": "I had an idea of implementing an an admin panel but since the database has to be prepopulated with data as the free tier of render.com does not allow the usage of a persistent database, I decided to skip it for now."
       }
-    ],
-    "search_terms": [
-      "project showcase",
-      "animated transitions",
-      "dynamic filtering",
-      "responsive design",
-      "interactive elements",
-      "website layout",
-      "user interface",
-      "content management",
-      "project organization",
-      "professional presentation"
     ]
   }
 ]
