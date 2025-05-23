@@ -160,7 +160,12 @@ function Projects({ selectedTags, relevance, precision }) {
   }, [sortedFilteredProjects]);
 
   if (loading) {
-    return <div className="projects-page-container">Loading projects...</div>;
+    return (
+      <div className="projects-page-container">
+        Loading projects...(this can take a few seconds due to free of cost
+        server endpoint. If the api timeouts, try again!)
+      </div>
+    );
   }
 
   if (error) {
