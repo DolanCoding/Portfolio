@@ -7,6 +7,8 @@ schema = {
         { name: "title", type: "TEXT NOT NULL" },
         { name: "description", type: "TEXT" },
         { name: "image", type: "TEXT" },
+        { name: "image2", type: "TEXT" },
+        { name: "image3", type: "TEXT" },
         { name: "github_link", type: "TEXT" },
         { name: "live_link", type: "TEXT" },
         { name: "tags", type: "TEXT" },
