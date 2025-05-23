@@ -81,6 +81,8 @@ function App() {
         {/* <-- New wrapper div */}
         {/* Define the routes */}
         <Routes>
+          <Route path="/Portfolio" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route
@@ -94,7 +96,7 @@ function App() {
             }
           />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
+          {/*<Route path="*" element={<NotFound />} />*/}
         </Routes>
       </div>{" "}
       {pageName === "projects" ? (
