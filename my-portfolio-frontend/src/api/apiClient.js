@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: "http://localhost:3001",
+  baseURL: "https://portfolio-backend-qu09.onrender.com",
   //https://portfolio-backend-qu09.onrender.com
-  //localhost:3001
+  //http://localhost:3001
   timeout: 500000,
   headers: {
     "Content-Type": "application/json",
