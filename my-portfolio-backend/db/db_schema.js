@@ -23,11 +23,17 @@ schema = {
       ],
     },
     {
-      name: "users",
+      name: "certificates",
       columns: [
         { name: "id", type: "INTEGER PRIMARY KEY AUTOINCREMENT" },
-        { name: "username", type: "TEXT NOT NULL" },
-        { name: "password", type: "TEXT NOT NULL" },
+        { name: "title", type: "TEXT NOT NULL" },
+        { name: "issuer", type: "TEXT NOT NULL" },
+        { name: "date", type: "TEXT" }, // ISO date string (e.g., "2024-01-15")
+        { name: "image", type: "TEXT" },
+        { name: "link", type: "TEXT" },
+        { name: "description", type: "TEXT" },
+        { name: "type", type: "TEXT" },
+        { name: "skills", type: "TEXT" },
       ],
     },
   ],

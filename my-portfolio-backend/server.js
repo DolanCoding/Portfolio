@@ -38,8 +38,12 @@ async function openDatabase() {
 app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Optional: if you plan to receive JSON data
 app.use(
-  "/images",
+  "/images/project_images",
   express.static(path.join(__dirname, "db", "Data", "images", "project_images"))
+);
+app.use(
+  "/images/Certificates",
+  express.static(path.join(__dirname, "db", "Data", "images", "Certificates"))
 );
 
 // --- API Routes ---
@@ -82,6 +86,18 @@ app.post("/api/admin_login", async (req, res) => {
   } catch (err) {
     console.error("Error executing query", err);
     res.status(500).json({ error: "Internal server error" }); // Send a 500 error response
+  }
+});
+
+// Route to get all certificates from the database
+app.get("/api/certificates", async (req, res) => {
+  console.log("Received request for certificates");
+  try {
+    const certificates = await db.all("SELECT * FROM certificates");
+    res.json(certificates);
+  } catch (err) {
+    console.error("Error executing query", err);
+    res.status(500).json({ error: "Internal server error" });
   }
 });
 

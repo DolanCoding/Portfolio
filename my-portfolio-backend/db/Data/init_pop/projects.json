@@ -62,5 +62,69 @@
         "Note 1": "I had an idea of implementing an an admin panel but since the database has to be prepopulated with data as the free tier of render.com does not allow the usage of a persistent database, I decided to skip it for now."
       }
     ]
+  },
+  {
+    "title": "Personal Portfolio Website",
+    "description": "A responsive portfolio showcasing my projects and skills using React, Express, and CSS.",
+    "image": "http://localhost:3001/images/project_images/Portfolio/portfolio_webapp1.png",
+    "image2": "http://localhost:3001/images/project_images/Portfolio/portfolio_webapp3.png",
+    "image3": "http://localhost:3001/images/project_images/Portfolio/portfolio_webapp2.png",
+    "github_link": "https://github.com/DolanCoding/Portfolio",
+    "live_link": "https://dolancoding.github.io/Portfolio/",
+    "tags": "React, Express, HTML, CSS, JavaScript",
+    "starting_date": "2023-04-28",
+    "finished_date": "2023-05-13",
+    "timespan": 75,
+    "hours_per_day": 5,
+    "learned_things": [
+      {
+        "CSS": "Mastery of Responsive Design with CSS Grid and Flexbox: Enables the development of user interfaces that function optimally on all devices and effectively appeal to a broad user base."
+      },
+      {
+        "React": "Confident use of React Hooks (useState, useEffect, useMemo, useRef): Leads to more efficient, maintainable, and performant code, accelerating development and reducing long-term costs."
+      },
+      {
+        "Js": "Coordination of animations with JS: Demonstrates attention to detail and the ability to create polished user experiences that convey professionalism."
+      },
+      {
+        "Node.js": "Backend integration with Express: Proves the ability to connect frontends with data sources and understand server-side logic – essential for complex applications."
+      }
+    ],
+    "reason": [
+      {
+        "Direct Proof of Skills": "Instead of just listing them, the portfolio provides direct, tangible proof of my practical skills. You'll see that I master technologies like React and Express and implement them into functional, appealing products – this reduces your hiring risk and builds trust."
+      },
+      {
+        "Demonstration of Comprehensive Work Approach": "Shows my ability for comprehensive (end-to-end) project implementation, from conception to deployment. Demonstrates my commitment to code quality and robustness for reliable applications, and highlights my problem-solving skills."
+      },
+      {
+        "Clear Sign of Motivation & Passion": "This self-initiated project is a clear indicator of my strong self-initiative, high motivation, and passion for web development. You'll gain an employee who is willing to engage enthusiastically and go beyond the standard."
+      },
+      {
+        "Proof of Willingness to Learn & Adaptability": "The documented learning successes prove my quick learning ability and adaptability. Essential in the tech industry for an employee who quickly gets up to speed and stays current – an important factor for project success."
+      }
+    ],
+    "key_features": [
+      {
+        "Dynamic tag-based filtering": "Dynamic, tag-based filtering: Allows you as an employer to quickly identify my relevant skills and find projects based on specific technologies – saving valuable time in candidate evaluation."
+      },
+      {
+        "Animated transitions": "Animated transitions: Demonstrates the ability to design high-quality and professional-looking user interfaces that enhance the user experience and show attention to detail."
+      },
+      {
+        "Backend with express.js and SQLite": "Implementation of a backend with Express.js and SQLite: Shows practical experience with database-driven applications and the ability to develop complete (full-stack) solutions."
+      },
+      {
+        "Hosting via Git-Pages": "Hosting via Git-Pages: Shows the ability to efficiently and cost-effectively deploy static content and leverage platform features for project presentation – ideal for landing pages or documentation."
+      },
+      {
+        "Deployment on Render.com": "Deployment on Render.com: Demonstrates experience in deploying and managing full-stack applications on modern cloud platforms. This proves the ability to bring complex applications from development to production and apply DevOps practices."
+      }
+    ],
+    "notes": [
+      {
+        "Note 1": "I had an idea of implementing an an admin panel but since the database has to be prepopulated with data as the free tier of render.com does not allow the usage of a persistent database, I decided to skip it for now."
+      }
+    ]
   }
 ]

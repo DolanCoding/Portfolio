@@ -12,6 +12,7 @@ import Projects from "./pages/Projects/Projects";
 import ProjectsViewerPanel from "./pages/Projects/components/ProjectsViewerPanel/ProjectsViewerPanel"; // Import the ProjectsViewerPanel component
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
+import Certificates from "./pages/Certificates/Certificates"; // Add this import at the top
 
 // Import Routes and Route from react-router-dom
 import { Routes, Route } from "react-router-dom";
@@ -95,6 +96,8 @@ function App() {
               />
             }
           />
+          <Route path="/certificates" element={<Certificates />} />{" "}
+          {/* Add this line */}
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

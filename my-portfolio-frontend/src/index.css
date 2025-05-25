@@ -31,8 +31,8 @@ ol {
 }
 /* src/index.css */
 html {
-  font-size: clamp(1.2vmin, 24px, 2.5vmin);
-  font-family: "Source Code Pro" !important;
+  font-size: clamp(1.2vmin, 24px, 2vmin);
+  font-family: "Source Code Pro", monospace;
 }
 html,
 body {

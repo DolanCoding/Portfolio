@@ -1,0 +1,32 @@
+.certificates-page-container {
+  background-color: var(--color-primary-medium-dark);
+  color: var(--color-text-light);
+  border-radius: 1vmin;
+  text-align: start;
+  min-height: 88vh;
+  width: 100%;
+  border: 0.3vmin solid #273050;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 2vw;
+  box-sizing: border-box;
+}
+
+.certificates-page-container h2 {
+  color: var(--color-secondary-light-blue);
+  text-align: center;
+  margin-bottom: 2vh;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.certificates-list {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, calc((100% - 1vh) / 2));
+  row-gap: 1vh;
+  width: 100%;
+  height: calc(100% - 6vh);
+  justify-items: center;
+  align-items: start;
+}

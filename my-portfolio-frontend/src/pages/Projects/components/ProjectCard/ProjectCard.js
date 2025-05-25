@@ -1,14 +1,15 @@
 import React, { useRef } from "react";
 import "./ProjectCard.css";
 import ProjectDetails from "../ProjectDetails/ProjectDetails.js";
+
 function ProjectCard(props) {
   let { id, title, description, image, github_link, live_link, tags } = props;
   const cardRef = useRef(null);
+  const movedCardsRef = useRef({ above: [], below: [] }); // Store moved cards
 
   tags = tags.split(",").sort((a, b) => a.length - b.length);
 
   const openDetails = async () => {
-    //Animations teil
     const cardsList = cardRef.current.parentNode;
     cardsList.style.overflow = "hidden";
     const cards = Array.from(
@@ -19,48 +20,39 @@ function ProjectCard(props) {
       block: "start",
       inline: "nearest",
     });
-    console.log("visible cards are: ", cards);
     const clickedCard = cardRef.current;
     const clickedIndex = cards.indexOf(clickedCard);
     const clickedIndexRow = (clickedIndex % 4) + 1;
 
-    console.log("the clicked card is in row: ", clickedIndexRow);
+    // Track moved cards
+    movedCardsRef.current.above = cards.slice(0, clickedIndex);
+    movedCardsRef.current.below = cards.slice(clickedIndex + 1);
 
-    // 1) The staggered "drag out" animation of the Cards above the clicked Card
+    // Animate above cards
     const staggeredDelay = 100;
-    let lowerCards;
-    for (let i = 0; i < cards.length; i++) {
+    for (let i = 0; i < clickedIndex; i++) {
       const card = cards[i];
-      console.log("project title = ", card.id);
-      if (i < clickedIndex) {
-        card.style.transitionDelay = `${(i + 1) * staggeredDelay}ms`;
-        card.style.transform = `translateY(-${(i + 1) * 21.25 + 21.25}vh)`;
-        card.style.opacity = 0;
-      } else if (i >= clickedIndex) {
-        lowerCards = cards.splice(i + 1, cards.length);
-        break;
-      }
+      card.style.transitionDelay = `${(i + 1) * staggeredDelay}ms`;
+      card.style.transform = `translateY(-${(i + 1) * 21.25 + 21.25}vh)`;
+      card.style.opacity = 0;
     }
 
-    // 2) The "drag into position of the clicked Card"
+    // Animate clicked card
     const clickedCardDelay =
       clickedIndexRow + 300 + staggeredDelay * clickedIndex;
     clickedCard.style.transition = `transform 300ms ease`;
     clickedCard.style.transitionDelay = `${clickedCardDelay}ms`;
     if (clickedIndexRow === 2) {
-      console.log("row 2");
       clickedCard.style.transform = `translateY(-21.25vh)`;
     } else if (clickedIndexRow === 3) {
-      console.log("row 3");
       clickedCard.style.transform = `translateY(-42.5vh)`;
     } else if (clickedIndexRow === 4) {
-      console.log("row 4");
       clickedCard.style.transform = `translateY(-63.75vh)`;
     }
 
+    // Expand details
     const detailsDelay = clickedCardDelay + 300;
     const details = clickedCard.querySelector(".project-details-wrapper");
-    console.log("details = ", details);
     details.style.transition = `height 1000ms ease`;
     details.style.height = `calc(400% + 3vh)`;
     details.style.transitionDelay = `${detailsDelay}ms`;
@@ -68,19 +60,54 @@ function ProjectCard(props) {
       details.style.transition = `none`;
     }, detailsDelay + 1000);
 
+    // Animate below cards
     const lowerCardsDelay = detailsDelay + (1000 / 4) * clickedIndexRow - 300;
-    console.log("lowerCards = ", lowerCards);
-    console.log("lowerCards.length = ", lowerCards.length);
-    for (let i = 0; i < lowerCards.length; i++) {
-      const card = lowerCards[i];
-      console.log("card = ", card);
+    for (let i = 0; i < movedCardsRef.current.below.length; i++) {
+      const card = movedCardsRef.current.below[i];
       card.style.transitionDelay = `${lowerCardsDelay}ms`;
       card.style.transform = `translateY(${(i + 1) * 21.25 + 42.5}vh)`;
       card.style.opacity = 0;
     }
   };
 
-  const closeDetails = () => {};
+  const closeDetails = () => {
+    const cardsList = cardRef.current.parentNode;
+    const clickedCard = cardRef.current;
+
+    // 1) Collapse the details section
+    const details = clickedCard.querySelector(".project-details-wrapper");
+    details.style.transition = `height 1000ms ease`;
+    details.style.height = `0`;
+    details.style.transitionDelay = `0ms`;
+
+    // 2) After details collapse, move cards back
+    setTimeout(() => {
+      // Move above cards back
+      movedCardsRef.current.above.forEach((card) => {
+        card.style.transitionDelay = `0ms`;
+        card.style.transform = `translateY(0)`;
+        card.style.opacity = 1;
+      });
+
+      // Move clicked card back
+      clickedCard.style.transition = `transform 300ms ease`;
+      clickedCard.style.transitionDelay = `0ms`;
+      clickedCard.style.transform = `translateY(0)`;
+
+      // Move below cards back
+      movedCardsRef.current.below.forEach((card) => {
+        card.style.transitionDelay = `0ms`;
+        card.style.transform = `translateY(0)`;
+        card.style.opacity = 1;
+      });
+
+      // Restore overflow after animation
+      setTimeout(() => {
+        cardsList.style.overflow = "";
+      }, 400);
+    }, 1000); // Wait for details to collapse
+  };
+
   return (
     <>
       <div

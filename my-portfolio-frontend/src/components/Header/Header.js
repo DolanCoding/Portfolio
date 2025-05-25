@@ -7,7 +7,7 @@ function Header(props) {
     <header>
       {" "}
       {/* Use a semantic <header> tag */}
-      <nav> 
+      <nav>
         <ul>
           <li>
             <Link to="/" onClick={(e) => props.changePageName("home")}>
@@ -25,6 +25,14 @@ function Header(props) {
               onClick={(e) => props.changePageName("projects")}
             >
               Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/certificates"
+              onClick={(e) => props.changePageName("certificates")}
+            >
+              Certificates
             </Link>
           </li>
           <li>
