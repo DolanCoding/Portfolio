@@ -3,8 +3,9 @@ import "./ProjectsViewerPanel.css"; // Import the CSS file for styling
 const Icons = {
   JavaScript: "https://img.icons8.com/color/48/javascript--v1.png",
   React: "https://img.icons8.com/color/48/react-native.png",
-  NodeJS: "https://img.icons8.com/color/48/nodejs.png",
-  MongoDB: "https://img.icons8.com/color/48/mongodb.png",
+  Redux: "https://img.icons8.com/color/48/redux.png",
+  "React-Flow": "https://img.icons8.com/color/48/flow-chart.png",
+  Express: "https://img.icons8.com/color/48/express-js.png",
   HTML: "https://img.icons8.com/color/48/html-5--v1.png",
   CSS: "https://img.icons8.com/color/48/css3.png",
   GitHub: "https://img.icons8.com/color/48/github--v1.png",
@@ -13,7 +14,6 @@ const Icons = {
   Python: "https://img.icons8.com/color/48/python--v1.png",
   SQL: "https://img.icons8.com/color/48/sql.png",
   POSTGRESQL: "https://img.icons8.com/color/48/postgresql.png",
-  Express: "https://img.icons8.com/color/48/express-js.png",
 };
 function ProjectsViewerPanel({
   handleTagFilter,
