@@ -37,14 +37,12 @@
 
 .about-section h3 {
   color: #b3cde0; /* Lighter blue for section headings */
-  margin-bottom: 1.5vh; /* Space below section headings */
   justify-self: center;
 }
 
 .about-section p {
   color: #5f94bf; /* Light gray for paragraphs */
   line-height: 1.7;
-  margin-bottom: 15px;
 }
 
 .skills-section ul {
@@ -93,7 +91,7 @@
 
 .project-entry h4,
 .learning-entry h4 {
-  color: #b3cde0; /* Lighter blue for the entry title */
+  color: #98c1d9; /* Lighter blue for the entry title */
   margin-top: 0; /* Remove default top margin */
   margin-bottom: 5px; /* Space below the title */
 }
@@ -103,15 +101,8 @@
 .learning-entry .learning-date {
   color: #98c1d9; /* Medium blue for dates/institution */
   font-size: 0.9em; /* Smaller font size */
-  margin-bottom: 10px; /* Space below */
   font-style: italic; /* Italicize dates/institution */
-}
-
-.project-entry p,
-.learning-entry p {
-  color: #ccc; /* Light gray for descriptions */
-  line-height: 1.6;
-  margin-bottom: 10px; /* Space below description */
+  margin: 0 !important;
 }
 
 /* Style for potential links within entries */
@@ -127,6 +118,11 @@
 
 .centered-p {
   text-align: center;
+  margin-bottom: 1.5vh;
+}
+
+.summary-section h3 {
+  margin-bottom: 1.5vh;
 }
 
 /* Specific style for the Skills list if you want it without bullets later */

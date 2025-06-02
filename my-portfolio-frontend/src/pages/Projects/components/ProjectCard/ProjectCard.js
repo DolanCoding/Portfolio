@@ -1,111 +1,96 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./ProjectCard.css";
 import ProjectDetails from "../ProjectDetails/ProjectDetails.js";
 
 function ProjectCard(props) {
   let { id, title, description, image, github_link, live_link, tags } = props;
   const cardRef = useRef(null);
-  const movedCardsRef = useRef({ above: [], below: [] }); // Store moved cards
+  const [detailsOpen, setDetailsOpen] = useState(false);
 
   tags = tags.split(",").sort((a, b) => a.length - b.length);
 
-  const openDetails = async () => {
+  const openDetails = () => {
     const cardsList = cardRef.current.parentNode;
-    cardsList.style.overflow = "hidden";
-    const cards = Array.from(
-      document.querySelectorAll(".projects-list .is-visible-for-animation")
-    );
-    cards[0].scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
+    cardsList.style.overflow = "visible";
+    const cards = Array.from(cardsList.children); // Always 4 cards
     const clickedCard = cardRef.current;
     const clickedIndex = cards.indexOf(clickedCard);
-    const clickedIndexRow = (clickedIndex % 4) + 1;
 
-    // Track moved cards
-    movedCardsRef.current.above = cards.slice(0, clickedIndex);
-    movedCardsRef.current.below = cards.slice(clickedIndex + 1);
-
-    // Animate above cards
-    const staggeredDelay = 100;
+    // Move cards above up and fade out
     for (let i = 0; i < clickedIndex; i++) {
       const card = cards[i];
-      card.style.transitionDelay = `${(i + 1) * staggeredDelay}ms`;
-      card.style.transform = `translateY(-${(i + 1) * 21.25 + 21.25}vh)`;
+      card.style.transition = "transform 0.5s, opacity 0.5s";
+      card.style.transform = "translateY(-105%)";
       card.style.opacity = 0;
     }
 
-    // Animate clicked card
-    const clickedCardDelay =
-      clickedIndexRow + 300 + staggeredDelay * clickedIndex;
-    clickedCard.style.transition = `transform 300ms ease`;
-    clickedCard.style.transitionDelay = `${clickedCardDelay}ms`;
-    if (clickedIndexRow === 2) {
-      clickedCard.style.transform = `translateY(-21.25vh)`;
-    } else if (clickedIndexRow === 3) {
-      clickedCard.style.transform = `translateY(-42.5vh)`;
-    } else if (clickedIndexRow === 4) {
-      clickedCard.style.transform = `translateY(-63.75vh)`;
+    // Move clicked card to top
+    clickedCard.style.transition = "transform 0.5s";
+    clickedCard.style.transform = `translateY(-${clickedIndex * 105}%)`;
+
+    // Move cards below down and fade out
+    for (let i = clickedIndex + 1; i < cards.length; i++) {
+      const card = cards[i];
+      card.style.transition = "transform 0.5s, opacity 0.5s";
+      card.style.transform = "translateY(105%)";
+      card.style.opacity = 0;
     }
 
-    // Expand details
-    const detailsDelay = clickedCardDelay + 300;
-    const details = clickedCard.querySelector(".project-details-wrapper");
-    details.style.transition = `height 1000ms ease`;
-    details.style.height = `calc(400% + 3vh)`;
-    details.style.transitionDelay = `${detailsDelay}ms`;
+    // After the move animation, expand details and push cards below further down
     setTimeout(() => {
-      details.style.transition = `none`;
-    }, detailsDelay + 1000);
+      const details = clickedCard.querySelector(".project-details-wrapper");
+      details.style.transition = "height 0.5s";
+      details.style.height = "calc(400% + 3vh)";
 
-    // Animate below cards
-    const lowerCardsDelay = detailsDelay + (1000 / 4) * clickedIndexRow - 300;
-    for (let i = 0; i < movedCardsRef.current.below.length; i++) {
-      const card = movedCardsRef.current.below[i];
-      card.style.transitionDelay = `${lowerCardsDelay}ms`;
-      card.style.transform = `translateY(${(i + 1) * 21.25 + 42.5}vh)`;
-      card.style.opacity = 0;
-    }
+      // Move cards below further down as details expand
+      for (let i = clickedIndex + 1; i < cards.length; i++) {
+        const card = cards[i];
+        card.style.transition = "transform 0.5s";
+        card.style.transform = "translateY(315%)"; // Adjust this value to match the expanded details height
+        card.style.opacity = 0;
+      }
+    }, 500);
   };
 
   const closeDetails = () => {
     const cardsList = cardRef.current.parentNode;
+    const cards = Array.from(cardsList.children); // Always 4 cards
     const clickedCard = cardRef.current;
+    const clickedIndex = cards.indexOf(clickedCard);
 
-    // 1) Collapse the details section
+    // Collapse the details section
     const details = clickedCard.querySelector(".project-details-wrapper");
-    details.style.transition = `height 1000ms ease`;
-    details.style.height = `0`;
-    details.style.transitionDelay = `0ms`;
+    details.style.transition = "height 0.5s";
+    details.style.height = "0";
 
-    // 2) After details collapse, move cards back
+    // After details collapse, move cards back
     setTimeout(() => {
-      // Move above cards back
-      movedCardsRef.current.above.forEach((card) => {
-        card.style.transitionDelay = `0ms`;
-        card.style.transform = `translateY(0)`;
+      // Move cards above back down and fade in
+      for (let i = 0; i < clickedIndex; i++) {
+        const card = cards[i];
+        card.style.transition = "transform 0.5s, opacity 0.5s";
+        card.style.transform = "translateY(0)";
         card.style.opacity = 1;
-      });
+      }
 
-      // Move clicked card back
-      clickedCard.style.transition = `transform 300ms ease`;
-      clickedCard.style.transitionDelay = `0ms`;
-      clickedCard.style.transform = `translateY(0)`;
+      // Move clicked card back to its original position
+      clickedCard.style.transition = "transform 0.5s";
+      clickedCard.style.transform = "translateY(0)";
 
-      // Move below cards back
-      movedCardsRef.current.below.forEach((card) => {
-        card.style.transitionDelay = `0ms`;
-        card.style.transform = `translateY(0)`;
+      // Move cards below back up and fade in
+      for (let i = clickedIndex + 1; i < cards.length; i++) {
+        const card = cards[i];
+        card.style.transition = "transform 0.5s, opacity 0.5s";
+        card.style.transform = "translateY(0)";
         card.style.opacity = 1;
-      });
+      }
 
       // Restore overflow after animation
       setTimeout(() => {
         cardsList.style.overflow = "";
       }, 400);
-    }, 1000); // Wait for details to collapse
+    }, 500); // Wait for details to collapse
+    setDetailsOpen(false); // Re-enable Details button
   };
 
   return (
@@ -137,6 +122,7 @@ function ProjectCard(props) {
                 <button
                   onClick={(e) => openDetails(e)}
                   className="project-button"
+                  disabled={detailsOpen}
                 >
                   Details
                 </button>

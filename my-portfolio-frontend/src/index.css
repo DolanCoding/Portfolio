@@ -3,7 +3,7 @@
 :root {
   /* --- Primäre Farben --- */
   --color-primary-dark: #001122; /* Sehr dunkles Blau (Hintergrund) */
-  --color-primary-medium-dark: #002244; /* Etwas dunkleres Blau (Header, Footer, Abschnitte) */
+  --color-primary-medium-dark: #022c57; /* Etwas dunkleres Blau (Header, Footer, Abschnitte) */
   --color-primary-medium: #003366; /* Mittleres Blau (z.B. Rahmen, Karten-Hintergrund) */
   --color-primary-light: #004085; /* Etwas helleres Blau (z.B. Scrollbar Hover) */
   --color-primary-accent: #0558b0; /* Akzent-Blau (z.B. Buttons) */

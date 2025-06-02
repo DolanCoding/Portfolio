@@ -122,4 +122,5 @@
   margin-right: 0.2vw;
   border-radius: 1vmin;
   font-weight: bold;
+  white-space: nowrap;
 }

@@ -4,12 +4,9 @@ import "./About.css";
 function About() {
   return (
     <div className="about-page-container">
-      {" "}
-      {/* Optional: a main container for padding/centering */}
-      <h2>About Me</h2> {/* Main heading for the page */}
+      <h2>About Me</h2>
       <section className="about-section summary-section">
-        <h3>My Story & What Drives Me</h3> {/* Updated Sub-heading */}
-        {/* Refined introduction emphasizing passion and core skills */}
+        <h3>My Story & What Drives Me</h3>
         <p>
           My journey into web development is fueled by an unyielding passion for
           transforming intricate ideas into functional, intuitive digital
@@ -20,7 +17,6 @@ function About() {
           <span className="skill-highlight">React</span> – enabling me to build
           dynamic, responsive user interfaces that captivate and convert.
         </p>
-        {/* Including backend expertise and the drive to build solutions */}
         <p>
           Complementing my frontend expertise, my experience in backend
           development with <span className="skill-highlight">Node.js</span> and{" "}
@@ -32,7 +28,6 @@ function About() {
           genuinely improve users' lives and contribute to meaningful outcomes
           for businesses.
         </p>
-        {/* Expressing eagerness to learn and commitment to impactful projects */}
         <p>
           In the fast-paced world of technology, continuous growth is key. I am
           relentlessly curious and dedicated to expanding my skillset, always
@@ -43,61 +38,39 @@ function About() {
         </p>
       </section>
       <section className="about-section skills-section">
-        <h3>Key Skills</h3> {/* Updated Sub-heading */}
+        <h3>Key Skills</h3>
         <p className="centered-p">
           Here are some of the technologies and areas I excel in:
-        </p>{" "}
-        {/* Updated intro text */}
+        </p>
         <ul>
-          <li>HTML & CSS (Flexbox, Grid, Responsive Design)</li>{" "}
-          {/* Combined/Detailed */}
-          <li>JavaScript (ES6+, DOM Manipulation)</li> {/* Detailed */}
-          <li>React, React Router, State Management</li> {/* Detailed */}
-          <li>Node.js & Express.js (REST APIs)</li> {/* Detailed */}
-          <li>SQL & PostgreSQL (Database Design & Querying)</li>{" "}
-          {/* Detailed */}
+          <li>HTML & CSS (Flexbox, Grid, Responsive Design)</li>
+          <li>JavaScript (ES6+, DOM Manipulation)</li>
+          <li>React, React Router, State Management</li>
+          <li>Node.js & Express.js (REST APIs)</li>
+          <li>SQL & PostgreSQL (Database Design & Querying)</li>
           <li>Git & GitHub (Version Control)</li>
-          <li>Problem Solving & Algorithm Design</li> {/* Added a soft skill */}
-          <li>Full-stack Application Architecture</li>{" "}
-          {/* Added higher-level skill */}
-          {/* Add more skills here that are relevant to your experience */}
+          <li>Problem Solving & Algorithm Design</li>
+          <li>Full-stack Application Architecture</li>
         </ul>
       </section>
-      {/* Keep the following sections as placeholders for now, ready for content */}
-      <section className="about-section projects-practice-section">
-        <h3>Projects & Practice</h3>
-        <p className="centered-p">
-          Here are some key projects I've worked on and areas where I've gained
-          practical experience:
-        </p>
-        <div className="project-entry">
-          <h4>[Project Name or Area of Practice]</h4>
-          <p className="project-date">[Dates or Timeframe]</p>
-          <p>
-            [Brief description of the project, its goal, and the technologies
-            used. Focus on the impact or problem solved.]
-          </p>
-          {/* Optional: Link to the project demo or GitHub repo */}
-          {/* <p><a href="#" target="_blank" rel="noopener noreferrer">[View Project / Code]</a></p> */}
-        </div>
-        {/* ... other project entries ... */}
-      </section>
-      <section className="about-section learning-development-section">
-        <h3>Continuous Learning</h3> {/* Updated Sub-heading */}
-        <p className="centered-p">
+      <section class="about-section learning-development-section">
+        <h3>Continuous Learning</h3>
+        <p class="centered-p">
           Details about my ongoing learning journey, courses, and resources I've
           used:
         </p>
-        <div className="learning-entry">
-          <h4>[Course Name or Learning Focus]</h4>
-          <p className="learning-institution">[Platform or Resource]</p>
-          <p className="learning-date">[Completion Date or Timeframe]</p>
-          {/* Optional: Mention key takeaways or topics covered, linking back to skills */}
-          {/* <p>[Key skills strengthened: React hooks, Node.js performance optimization, etc.]</p> */}
+        <div class="learning-entry">
+          <h4>Full-Stack Engineer Career Path</h4>
+          <p class="learning-institution">Institution: Codecademy.com</p>
+          <p class="learning-date">Status: Finished</p>
+          <p>
+            Key skills strengthened: Developing robust web applications with
+            React and Redux, building scalable APIs with Node.js and Express,
+            designing and managing databases with SQL and MongoDB, and
+            implementing secure user authentication.
+          </p>
         </div>
-        {/* ... other learning entries ... */}
       </section>
-      {/* You could add other sections like 'Interests' or 'Awards' */}
     </div>
   );
 }
