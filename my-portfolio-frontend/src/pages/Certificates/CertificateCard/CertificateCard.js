@@ -43,19 +43,19 @@ export default function CertificateCard({
         <img className="certificate-image" src={image} alt={title} />
       </div>
       <div className="certificate-row2">
-        <div className="certificate-details">
-          {skills && (
-            <p className="certificate-skills">
-              <strong>Skills:</strong>{" "}
-              {skills.map((skill) => (
-                <span className="skill-highlight" key={skill}>{skill}</span>
-              ))}
-            </p>
-          )}
-          {description && (
-            <p className="certificate-description">{description}</p>
-          )}
-        </div>
+        {skills && (
+          <p className="certificate-skills">
+            <strong>Skills: </strong>{" "}
+            {skills.map((skill) => (
+              <span className="skill-highlight" key={skill}>
+                {skill}
+              </span>
+            ))}
+          </p>
+        )}
+        {description && (
+          <p className="certificate-description">{description}</p>
+        )}
       </div>
     </div>
   );

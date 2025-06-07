@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio-frontend",
-  "proxy": "https://localhost:3001",
+  "proxy": "http://localhost:3001",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage":"https://dolancoding.github.io/Portfolio/",
+  "homepage": "https://dolancoding.github.io/Portfolio/",
   "eslintConfig": {
     "extends": [
       "react-app",

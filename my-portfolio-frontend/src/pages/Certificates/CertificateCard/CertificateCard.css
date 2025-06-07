@@ -4,13 +4,11 @@
   border-radius: 1vmin;
   box-shadow: 0 0.4vmin 0.8vmin rgba(0, 0, 0, 0.3);
   padding: 2vmin;
-  width: 100%;
-  height: 100%;
+  height: 45vh;
   display: grid;
-  grid-template-rows: 75% 25%;
+  grid-template-rows: 30vh auto;
   row-gap: 1vh;
   grid-template-columns: 1fr;
-  margin-bottom: 2vh;
 }
 
 .certificate-row1 {
@@ -19,7 +17,7 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: calc(35%) calc(65% - 2vmin);
+  grid-template-columns: 35% calc(65% - 1vw);
   column-gap: 1vw;
   grid-template-rows: 1fr;
   align-items: center;
@@ -27,27 +25,32 @@
 }
 
 .certificate-image {
-  width: 100%; /* Make the image take up the full width of its grid cell */
-  height: 25vh; /* Make the image take up the full height of its grid cell */
-  object-fit: contain; /* Ensure the image scales proportionally to fill the grid cell */
+  height: 100%;
+  max-height: 30vh;
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
   border-radius: 0.5vmin;
   border: 0.1vmin solid var(--color-secondary-link);
   background: var(--color-primary-dark);
   box-shadow: 0 0.2vmin 0.4vmin rgba(0, 0, 0, 0.15);
+  align-self: center;
 }
 
 .certificate-info {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 1vh;
   border: 0.1vmin solid var(--color-secondary-link);
   border-radius: 0.5vmin;
-  height: 25vh;
+  height: 100%;
   width: 100%;
-  padding: 2vh 2.3vw;
   background-color: var(--color-primary-medium-dark);
+  padding: 1vh 2vw;
 }
 
 .certificate-info > p {
@@ -69,7 +72,7 @@
 
 .certificate-title {
   color: var(--color-text-light);
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0;
   font-weight: bold;
   line-height: 1.2;
@@ -87,13 +90,19 @@
 .certificate-skills {
   color: var(--color-secondary-light-blue);
   font-size: 1rem;
-  margin: 0.5vh 0 1vh 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
 }
-
+.certificate-skills > strong {
+  align-self: center;
+}
 .certificate-description {
   color: var(--color-text-medium);
-  font-size: 0.95rem;
-  margin: 0.5vh 0 0 0;
+  font-size: 1rem;
+  text-align: center;
+  align-self: start;
 }
 
 .certificate-link {
@@ -113,6 +122,18 @@
   background-color: var(--color-secondary-lighter-blue);
   color: var(--color-primary-light);
   border-color: var(--color-secondary-lighter-blue);
+}
+
+.certificate-row2 {
+  grid-row: 2;
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 30% calc(70% - 1vh);
+  row-gap: 1vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .skill-highlight {

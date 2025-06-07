@@ -1,19 +1,13 @@
 import React from "react";
 import "./ProjectsViewerPanel.css"; // Import the CSS file for styling
 const Icons = {
-  JavaScript: "https://img.icons8.com/color/48/javascript--v1.png",
   React: "https://img.icons8.com/color/48/react-native.png",
-  Redux: "https://img.icons8.com/color/48/redux.png",
   "React-Flow": "https://img.icons8.com/color/48/flow-chart.png",
+  JavaScript: "https://img.icons8.com/color/48/javascript--v1.png",
+  Redux: "https://img.icons8.com/color/48/redux.png",
   Express: "https://img.icons8.com/color/48/express-js.png",
   HTML: "https://img.icons8.com/color/48/html-5--v1.png",
   CSS: "https://img.icons8.com/color/48/css3.png",
-  GitHub: "https://img.icons8.com/color/48/github--v1.png",
-  Git: "https://img.icons8.com/color/48/git.png",
-  Bootstrap: "https://img.icons8.com/color/48/bootstrap.png",
-  Python: "https://img.icons8.com/color/48/python--v1.png",
-  SQL: "https://img.icons8.com/color/48/sql.png",
-  POSTGRESQL: "https://img.icons8.com/color/48/postgresql.png",
 };
 function ProjectsViewerPanel({
   handleTagFilter,

@@ -102,7 +102,9 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>{" "}
-      {pageName === "projects" ? (
+      {
+        //Project Viewer Panel deactivated till i need it due to project number increasing
+        /*pageName === "projects" ? (
         <ProjectsViewerPanel
           handleSearch={handleSearch}
           handleTagFilter={handleTagFilter}
@@ -110,7 +112,8 @@ function App() {
           handleTagPrecision={handleTagPrecision}
           selectedTags={selectedTags}
         />
-      ) : null}
+      ) : null*/
+      }
       {/* <-- End of wrapper div */}
       <Footer changePageName={changePageName} />
     </div>
