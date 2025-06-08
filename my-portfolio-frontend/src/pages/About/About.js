@@ -70,6 +70,17 @@ function About() {
             implementing secure user authentication.
           </p>
         </div>
+        <div class="learning-entry">
+          <h4>Full-Stack Engineer Career Path</h4>
+          <p class="learning-institution">Institution: Codecademy.com</p>
+          <p class="learning-date">Status: Finished</p>
+          <p>
+            Key skills strengthened: Developing robust web applications with
+            React and Redux, building scalable APIs with Node.js and Express,
+            designing and managing databases with SQL and MongoDB, and
+            implementing secure user authentication.
+          </p>
+        </div>
       </section>
     </div>
   );

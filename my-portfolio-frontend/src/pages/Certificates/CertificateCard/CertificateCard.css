@@ -102,7 +102,7 @@
   color: var(--color-text-medium);
   font-size: 1rem;
   text-align: center;
-  align-self: start;
+  align-self: center;
 }
 
 .certificate-link {

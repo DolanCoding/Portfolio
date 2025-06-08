@@ -73,7 +73,7 @@
     "live_link": "https://dolancoding.github.io/Project_Planner/",
     "tags": "React, React-Flow, JavaScript, Redux",
     "starting_date": "2025-05-14",
-    "finished_date": "2023-05-26",
+    "finished_date": "2025-05-26",
     "timespan": 60,
     "hours_per_day": 5,
     "learned_things": [
@@ -121,6 +121,73 @@
     "notes": [
       {
         "Note 1": "This project was intentionally designed with a frontend-only architecture to highlight expertise in complex UI/UX development and robust client-side state management. This approach allows for lightweight deployment and rapid iteration on user-facing features. For projects requiring persistent data storage or server-side logic, a backend integration would be a logical next step, utilizing technologies such as Node.js with Express or a serverless function approach."
+      }
+    ]
+  },
+  {
+    "title": "Task Manager XP",
+    "description": "A dynamic web app for efficient task management and enhanced personal productivity, offering a clean, intuitive interface with distinct desktop and mobile functionalities.",
+    "image": "https://portfolio-9qv4.onrender.com/images/project_images/TaskmanagerXP/TaskmanagerXP.png",
+    "image2": "https://portfolio-9qv4.onrender.com/images/project_images/TaskmanagerXP/TaskmanagerXP2.png",
+    "image3": "https://portfolio-9qv4.onrender.com/images/project_images/TaskmanagerXP/TaskmanagerXP3.png",
+    "github_link": "https://github.com/DolanCoding/TaskmanagerXP",
+    "live_link": "https://taskmanagerxp.onrender.com",
+    "tags": "Native JavaScript, Python, CSS",
+    "starting_date": "2025-05-26",
+    "finished_date": "2025-06-08",
+    "timespan": "70",
+    "hours_per_day": "5",
+    "learned_things": [
+      {
+        "Native JavaScript": "Mastery in building interactive and dynamic front-end experiences without relying on heavy frameworks, demonstrating a deep understanding of core web technologies and efficient DOM manipulation."
+      },
+      {
+        "Python Server & Templating": "Proficiency in back-end development using Python for server logic and templating for dynamic content generation, showcasing the ability to build robust and scalable server-side applications."
+      },
+      {
+        "Responsive Design": "Expertise in designing and implementing user interfaces that adapt seamlessly across various devices and screen sizes, ensuring optimal user experience on both desktop and mobile platforms."
+      },
+      {
+        "Drag and Drop Functionality": "Implementation of advanced UI interactions, specifically drag-and-drop features for desktop users, demonstrating skill in creating intuitive and engaging user workflows for complex operations."
+      },
+      {
+        "Database Integration & Data Handling": "Competence in managing and persisting application data, including task details, categories, points, and history, indicating strong command over data storage and retrieval mechanisms."
+      }
+    ],
+    "reason": [
+      {
+        "Proof of Full-Stack Proficiency": "This project serves as direct evidence of comprehensive full-stack development skills, combining robust Python back-end capabilities with interactive native JavaScript front-end implementation."
+      },
+      {
+        "Demonstration of Adaptive UX Design": "The application's responsive design and distinct desktop-specific features (like drag-and-drop) highlight a keen understanding of user experience across different form factors, crucial for delivering versatile and user-friendly products."
+      },
+      {
+        "Expertise in Scalable Server-Side Logic": "Leveraging a Python server, this project showcases the ability to develop maintainable and scalable back-end solutions capable of handling core application logic and data management efficiently."
+      },
+      {
+        "Commitment to Clean Code & Performance": "The use of native JavaScript suggests a focus on optimizing performance and maintaining a lightweight front-end, reflecting a commitment to best practices in web development."
+      }
+    ],
+    "key_features": [
+      {
+        "Core Task Management & Categorization": "Users can efficiently create, edit, and delete tasks, categorized for better organization, providing a clear and structured approach to personal productivity."
+      },
+      {
+        "Gamified Productivity System": "A unique points system adds an engaging and motivating element, encouraging consistent task completion and user engagement."
+      },
+      {
+        "Adaptive User Interface": "The application features a responsive design, ensuring a seamless and optimized experience whether accessed on a desktop or a mobile device."
+      },
+      {
+        "Desktop-Specific Drag & Drop + Grouping": "On desktop, users benefit from intuitive drag-and-drop functionality, enabling visual reordering and grouping of tasks for enhanced workflow management. This feature demonstrates advanced front-end interaction design."
+      },
+      {
+        "Comprehensive Task History & Pinboard": "Users can track their progress through a detailed task history and quickly review current tasks on an organized 'Pinboard'."
+      }
+    ],
+    "notes": [
+      {
+        "Note 1": "The project intentionally leverages native JavaScript for the front-end to highlight a deep understanding of core web technologies and performance optimization without framework overhead. The Python server provides a robust back-end, showcasing full-stack capabilities. The distinct desktop drag-and-drop functionality illustrates thoughtful responsive design decisions, adapting features to the most suitable screen real estate."
       }
     ]
   }
