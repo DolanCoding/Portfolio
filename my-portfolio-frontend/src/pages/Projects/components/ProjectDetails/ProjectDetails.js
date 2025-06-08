@@ -31,19 +31,19 @@ function ProjectDetails(props) {
           <div className="details-container2-content">
             <div className="time-investment-content">
               <p>
-                <span>Angefangen:</span>
+                <span>Started:</span>
                 <span>{starting_date}</span>
               </p>
               <p>
-                <span>Beendet:</span>
+                <span>Ended:</span>
                 <span>{finished_date}</span>
               </p>
               <p>
-                <span>Tage:</span>
+                <span>Days:</span>
                 <span>{timespan}</span>
               </p>
               <p>
-                <span>Stunden pro Tag:</span>
+                <span>Hours per day:</span>
                 <span>{hours_per_day}</span>
               </p>
               <p>
@@ -58,7 +58,7 @@ function ProjectDetails(props) {
         {page === 0 ? (
           <>
             <div className="details-container">
-              <h5 className="details-h5">Begründung</h5>
+              <h5 className="details-h5">Reason for Project</h5>
               <ul className="list-content">
                 {reason.map((reason, index) => (
                   <li key={index}>
@@ -71,7 +71,7 @@ function ProjectDetails(props) {
           </>
         ) : page === 1 ? (
           <div className="details-container">
-            <h5>Neu Erlernte Dinge:</h5>
+            <h5>Learned:</h5>
             <ul className="list-content">
               {learned_things.map((thing, index) => (
                 <li key={index}>
