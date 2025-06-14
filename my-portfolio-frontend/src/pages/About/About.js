@@ -64,21 +64,23 @@ function About() {
           <p class="learning-institution">Institution: Codecademy.com</p>
           <p class="learning-date">Status: Finished</p>
           <p>
-            Key skills strengthened: Developing robust web applications with
-            React and Redux, building scalable APIs with Node.js and Express,
+            Key skills aquired: Developing robust web applications with React
+            and Redux, building scalable APIs with Node.js and Express,
             designing and managing databases with SQL and MongoDB, and
             implementing secure user authentication.
           </p>
         </div>
         <div class="learning-entry">
-          <h4>Full-Stack Engineer Career Path</h4>
-          <p class="learning-institution">Institution: Codecademy.com</p>
-          <p class="learning-date">Status: Finished</p>
+          <h4>Open FullStack </h4>
+          <p class="learning-institution">
+            Institution: Department of Computer Science, University of Helsinki
+          </p>
+          <p class="learning-date">Status: Ongoing</p>
           <p>
-            Key skills strengthened: Developing robust web applications with
-            React and Redux, building scalable APIs with Node.js and Express,
-            designing and managing databases with SQL and MongoDB, and
-            implementing secure user authentication.
+            Key skills strengthened: React, React-Redux aswell as React-Router,
+            Node.js, Express.js, and SQL databases. This course is a
+            comprehensive introduction to the fundamentals of web development,
+            including HTML, CSS, JavaScript, and server-side programming.
           </p>
         </div>
       </section>
